@@ -1,0 +1,5 @@
+services:
+  chatapp:
+    image: chatapp
+    ports:
+      - 80:80

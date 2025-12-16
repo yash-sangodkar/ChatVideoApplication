@@ -30,7 +30,7 @@ jobs:
     - name: Build & Push Backend Image
       uses: docker/build-push-action@v5
       with:
-        context: ./ChatVideoClient/chat-video-client
+        context: ./ChatVideoAPI/ChatVideoAPI
         push: true
         tags: ghcr.io/${{ github.repository_owner }}/myapp-backend:latest
 
@@ -38,6 +38,6 @@ jobs:
     - name: Build & Push Frontend Image
       uses: docker/build-push-action@v5
       with:
-        context: ./
+        context: ./ChatVideoClient/chat-video-client
         push: true
         tags: ghcr.io/${{ github.repository_owner }}/myapp-frontend:latest
